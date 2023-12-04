@@ -1,0 +1,17 @@
+#preloader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff; /* Změňte barvu pozadí podle potřeby */
+    z-index: 50;
+    transition: .5s all;
+  }
+
+  #preloader video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
