@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trapholt</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-[#edebe7] w-full relative">
+        <nav id="navbar" class="flex lg:flex-row flex-col justify-between py-4 px-8 items-center lg:bg-transparent bg-[#edebe7] border-b border-[#272729]">
+            <div class="lg:block flex justify-between lg:w-fit w-full">
+                <img class="h-9 mt-2" src="img/logoBlack.svg" alt="Logo">
+                <button id="toggleButton" class="lg:hidden text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-6 h-6 stroke-[#272729]">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>                      
+                </button>
+            </div>
+            <div id="navbarContent" class="lg:pt-0 pt-4 lg:block hidden">
+                <ul class="text-[#272729] flex lg:flex-row flex-col lg:divide-x-2 divide-neutral-700 lg:space-y-0 space-y-2 lg:text-left text-center">
+                    <li class="px-8 hover:underline"><a href="index.html">Home</a></li>
+                    <li class="px-8 hover:underline"><a href="about-us.html">About</a></li>
+                    <li class="px-8 hover:underline"><a href="#">Exhibitons</a></li>
+                    <li class="px-8 hover:underline"><a href="#">Store</a></li>
+                    <li class="px-8 hover:underline"><a href="#">Café</a></li>
+                </ul>
+            </div>
+            <div id="navbarButton" class="lg:pt-0 pt-4 lg:pb-0 pb-2 lg:block hidden">
+                <a class="bg-[#272729] text-white px-6 py-2 rounded-lg hover:bg-[#edebe7] hover:text-[#272729] hover:outline hover:outline-black hover:outline-offset-[-3px] transition" href="#">
+                    Buy Ticket
+                </a>
+            </div>
+        </nav>
+    </div>
+    <div class="bg-[#edebe7] py-16 text-[#272729] pb-72">
+        <div class="container mx-auto lg:px-0 px-8">
+            <h1 class="uppercase text-4xl font-semibold pb-8">
+                Buy Ticket
+            </h1>
+            <div class="space-y-8">
+                <div class="flex lg:flex-row flex-col lg:space-x-12 space-x-0 lg:items-start items-center lg:space-y-0 space-y-8 justify-between">
+                    <div class="lg:w-1/2 w-full">
+                        <h2 class="font-semibold lg:text-xl text-lg">
+                            Show the ticket on your phone or as a printout. <br>Valid 1 year from date of purchase.<br>
+                        </h2>
+                        <p class="lg:text-base text-sm mt-2">
+                            Your admission ticket is valid all day <br>- You can enter and leave the museum as you wish.
+                        </p>
+                        <div class="mt-4">
+                            <h2 class="font-semibold">
+                                Opening hours
+                            </h2>
+                            <div class="flex space-x-6 mt-1">
+                                <ul>
+                                    <li>Monday</li>
+                                    <li>Tuesday</li>
+                                    <li>Wednesday</li>
+                                    <li>Thursday</li>
+                                    <li>Friday</li>
+                                    <li>Saturday</li>
+                                    <li>Sunday</li>
+                                </ul>
+                                <ul>
+                                    <li>Closed</li>
+                                    <li>10.00 - 21.00</li>
+                                    <li>10.00 - 17.00</li>
+                                    <li>10.00 - 17.00</li>
+                                    <li>10.00 - 17.00</li>
+                                    <li>10.00 - 17.00</li>
+                                    <li>10.00 - 17.00</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:max-w-xl w-full space-y-2">
+                        <div class="flex bg-[#272729] text-white items-center justify-center py-1 rounded-lg">
+                            <svg id="Group_25" data-name="Group 25" xmlns="http://www.w3.org/2000/svg" width="27.883" height="27.883" viewBox="0 0 27.883 27.883">
+                                <path id="Path_32" data-name="Path 32" d="M0,0H27.883V27.883H0Z" fill="none"/>
+                                <path id="Path_33" data-name="Path 33" d="M15,5V7.324" transform="translate(2.427 0.809)" fill="none" stroke="#edebe7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                <path id="Path_34" data-name="Path 34" d="M15,11v2.324" transform="translate(2.427 1.78)" fill="none" stroke="#edebe7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                <path id="Path_35" data-name="Path 35" d="M15,17v2.324" transform="translate(2.427 2.751)" fill="none" stroke="#edebe7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                <path id="Path_36" data-name="Path 36" d="M5.324,5H21.589a2.324,2.324,0,0,1,2.324,2.324v3.485a2.324,2.324,0,0,0,0,4.647v3.485a2.324,2.324,0,0,1-2.324,2.324H5.324A2.324,2.324,0,0,1,3,18.942V15.456a2.324,2.324,0,0,0,0-4.647V7.324A2.324,2.324,0,0,1,5.324,5" transform="translate(0.485 0.809)" fill="none" stroke="#edebe7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                            </svg>      
+                            <p class="uppercase text-sm">
+                                Choose your tickets
+                            </p>
+                        </div>
+                        <div class="flex bg-white text-[#272729] rounded-lg outline outline-[#272729] outline-offset-[-3px] py-4 justify-between items-center h-[5rem]">
+                            <div class="pl-10">
+                                <p class="font-semibold">Adult</p>
+                                <p>130.00 DKK</p>
+                            </div>
+                            <div class="flex pr-10 space-x-2 items-center">
+                                <p>
+                                    <button id="btn-minus" class="pt-1">
+                                        <svg id="Component_2_5" data-name="Component 2 – 5" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 41 40">
+                                            <g id="Rectangle_28" data-name="Rectangle 28" fill="none" stroke="#272729" stroke-width="1">
+                                            <rect width="41" height="40" rx="10" stroke="none"/>
+                                            <rect x="0.5" y="0.5" width="40" height="39" rx="9.5" fill="none"/>
+                                            </g>
+                                            <text id="_-" data-name="-" transform="translate(15 28)" fill="#272729" font-size="24" font-family="Inter"><tspan x="0" y="0">-</tspan></text>
+                                        </svg>  
+                                    </button>
+                                </p>
+                                <p id="count" class="bg-[#272729] text-white text-4xl px-3 py-1 w-[3rem] text-center rounded-lg">0</p>
+                                <p>
+                                    <button id="btn-plus" class="pt-1">
+                                        <svg id="Component_3_5" data-name="Component 3 – 5" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 41 40">
+                                            <g id="Rectangle_25" data-name="Rectangle 25" fill="none" stroke="#272729" stroke-width="1">
+                                            <rect width="41" height="40" rx="10" stroke="none"/>
+                                            <rect x="0.5" y="0.5" width="40" height="39" rx="9.5" fill="none"/>
+                                            </g>
+                                            <text id="_" data-name="+" transform="translate(13 27)" fill="#272729" font-size="24" font-family="Inter"><tspan x="0" y="0">+</tspan></text>
+                                        </svg> 
+                                    </button>
+                                </p>
+                            </div>                   
+                        </div>
+                        <div class="flex bg-white text-[#272729] rounded-lg outline outline-[#272729] outline-offset-[-3px] py-4 justify-between items-center h-[5rem]">
+                            <div class="pl-10">
+                                <p class="font-semibold">Student</p>
+                                <p>65.00 DKK</p>
+                            </div>
+                            <div class="flex pr-10 space-x-2 items-center">
+                                <p>
+                                    <button id="btn-minus2" class="pt-1">
+                                        <svg id="Component_2_5" data-name="Component 2 – 5" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 41 40">
+                                            <g id="Rectangle_28" data-name="Rectangle 28" fill="none" stroke="#272729" stroke-width="1">
+                                            <rect width="41" height="40" rx="10" stroke="none"/>
+                                            <rect x="0.5" y="0.5" width="40" height="39" rx="9.5" fill="none"/>
+                                            </g>
+                                            <text id="_-" data-name="-" transform="translate(15 28)" fill="#272729" font-size="24" font-family="Inter"><tspan x="0" y="0">-</tspan></text>
+                                        </svg>  
+                                    </button>
+                                </p>
+                                <p id="count2" class="bg-[#272729] text-white text-4xl px-3 py-1 w-[3rem] text-center rounded-lg">0</p>
+                                <p>
+                                    <button id="btn-plus2" class="pt-1">
+                                        <svg id="Component_3_5" data-name="Component 3 – 5" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 41 40">
+                                            <g id="Rectangle_25" data-name="Rectangle 25" fill="none" stroke="#272729" stroke-width="1">
+                                            <rect width="41" height="40" rx="10" stroke="none"/>
+                                            <rect x="0.5" y="0.5" width="40" height="39" rx="9.5" fill="none"/>
+                                            </g>
+                                            <text id="_" data-name="+" transform="translate(13 27)" fill="#272729" font-size="24" font-family="Inter"><tspan x="0" y="0">+</tspan></text>
+                                        </svg> 
+                                    </button>
+                                </p>
+                            </div>                    
+                        </div>
+                        <div class="flex bg-white text-[#272729] rounded-lg outline outline-[#272729] outline-offset-[-3px] py-4 justify-between items-center h-[5rem]">
+                            <div class="pl-10">
+                                <p class="font-semibold">Group</p>
+                                <p>105.00 DKK per person (10+)</p>
+                            </div>
+                            <div class="flex pr-10 space-x-2 items-center">
+                                <p>
+                                    <button id="btn-minus3" class="pt-1">
+                                        <svg id="Component_2_5" data-name="Component 2 – 5" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 41 40">
+                                            <g id="Rectangle_28" data-name="Rectangle 28" fill="none" stroke="#272729" stroke-width="1">
+                                            <rect width="41" height="40" rx="10" stroke="none"/>
+                                            <rect x="0.5" y="0.5" width="40" height="39" rx="9.5" fill="none"/>
+                                            </g>
+                                            <text id="_-" data-name="-" transform="translate(15 28)" fill="#272729" font-size="24" font-family="Inter"><tspan x="0" y="0">-</tspan></text>
+                                        </svg>  
+                                    </button>
+                                </p>
+                                <p id="count3" class="bg-[#272729] text-white text-4xl px-3 py-1 w-[3rem] text-center rounded-lg">0</p>
+                                <p>
+                                    <button id="btn-plus3" class="pt-1">
+                                        <svg id="Component_3_5" data-name="Component 3 – 5" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 41 40">
+                                            <g id="Rectangle_25" data-name="Rectangle 25" fill="none" stroke="#272729" stroke-width="1">
+                                            <rect width="41" height="40" rx="10" stroke="none"/>
+                                            <rect x="0.5" y="0.5" width="40" height="39" rx="9.5" fill="none"/>
+                                            </g>
+                                            <text id="_" data-name="+" transform="translate(13 27)" fill="#272729" font-size="24" font-family="Inter"><tspan x="0" y="0">+</tspan></text>
+                                        </svg> 
+                                    </button>
+                                </p>
+                            </div>                   
+                        </div>
+                        <div class="flex bg-white text-[#272729] rounded-lg outline outline-[#272729] outline-offset-[-3px] py-6 justify-between items-center h-[5rem]">
+                            <div class="pl-10">
+                                <p class="font-semibold">Under 18</p>
+                            </div>
+                            <div class="flex pr-10 space-x-2 items-center">
+                                <p class="bg-[#272729] text-white font-semibold text-xl px-10 py-1 rounded-lg">
+                                    Free
+                                </p>
+                            </div>                   
+                        </div>
+                        <div class="flex bg-[#272729] text-white items-center justify-center py-3 rounded-lg">
+                            <svg id="Group_28" data-name="Group 28" xmlns="http://www.w3.org/2000/svg" width="27.228" height="27.228" viewBox="0 0 27.228 27.228">
+                                <path id="Path_37" data-name="Path 37" d="M0,0H27.228V27.228H0Z" fill="none"/>
+                                <path id="Path_38" data-name="Path 38" d="M6.269,19.269,4,19.269A2.269,2.269,0,1,0,6.269,17,2.269,2.269,0,0,0,4,19.269" transform="translate(0.538 2.287)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                <path id="Path_39" data-name="Path 39" d="M17.269,19.269m-2.269,0A2.269,2.269,0,1,0,17.269,17,2.269,2.269,0,0,0,15,19.269" transform="translate(2.018 2.287)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                <path id="Path_40" data-name="Path 40" d="M18.749,18.883H6.269V3H4" transform="translate(0.538 0.404)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                <path id="Path_41" data-name="Path 41" d="M6,5,21.883,6.135l-1.135,7.942H6" transform="translate(0.807 0.673)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                              </svg>                                   
+                            <p class="uppercase text-sm">
+                                Choose your tickets
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <div class="bg-[#272729] pt-20 pb-6">
+        <div class="container mx-auto">
+            <div class="lg:grid lg:grid-cols-2 gap-2 md:grid-rows-1 lg:px-0 px-8">
+                <div>
+                    <img src="img/Logo.svg" alt="Logo" class="h-16">
+                </div>
+                <div class="lg:flex justify-between pb-6 md:grid md:grid-rows-1 md:gap-y-12 lg:space-y-0 space-y-6">
+                    <ul class="text-white space-y-2 font-bold lg:mt-0 md:mt-4">
+                        <li>
+                            <a href="#" class="text-white font-bold">Adress</a>
+                        </li>
+                        <li>
+                            <p class="font-extralight">Trapholt</p>
+                        </li>
+                        <li>
+                            <p class="font-extralight">Æblehaven 23</p>
+                        </li>
+                        <li>
+                            <p class="font-extralight">6000 Kolding</p>
+                        </li>
+                    </ul>
+                    <ul class="text-white space-y-2 font-bold">
+                        <li>
+                            <a href="#" class="text-white font-bold">Opening hours</a>
+                        </li>
+                        <div class="grid grid-cols-2 font-extralight">
+                            <ul class="space-y-2">
+                                <li>Mon</li>
+                                <li>Tue-Sun</li>
+                                <li>Wed</li>
+                            </ul>
+                            <ul class="space-y-2 -ml-12 lg:ml-0 md:ml-0">
+                                <li>Closed</li>
+                                <li>10.00 - 17.00</li>
+                                <li>10.00 - 21.00</li>
+                            </ul>
+                        </div>
+                    </ul>
+                    <ul class="space-y-2">
+                        <a href="#" class="text-white font-bold">Follow us</a>
+                        <div class="flex">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-white" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M16.5 7.5l0 .01" /></svg>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-white" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-white" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" /><path d="M10 9l5 3l-5 3z" /></svg>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-white" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" /><path d="M8 11l0 5" /><path d="M8 8l0 .01" /><path d="M12 16l0 -5" /><path d="M16 16v-3a2 2 0 0 0 -4 0" /></svg>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-white" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.5 13.5m-1.5 0a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0" /><path d="M17.5 13.5m-1.5 0a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0" /><path d="M17.5 9a4.5 4.5 0 1 0 3.5 1.671l1 -1.671h-4.5z" /><path d="M6.5 9a4.5 4.5 0 1 1 -3.5 1.671l-1 -1.671h4.5z" /><path d="M10.5 15.5l1.5 2l1.5 -2" /><path d="M9 6.75c2 -.667 4 -.667 6 0" /></svg>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-white pb-4 mt-8"/>
+            <span class="block text-sm text-white opacity-50 mt-2 text-center">
+                © 2023 Trapholt
+            </span>
+        </div>
+    </div>
+    <script>
+        let number = 0;
+        const count = document.getElementById("count");
+        const btnPlus = document.getElementById("btn-plus");
+        const btnMinus = document.getElementById("btn-minus");
+
+        btnPlus.addEventListener("click", () => {
+            if (number < 10) {
+                count.innerText = ++number;
+            } else {
+                alert("Number reached maximum");
+            }
+        });
+
+        btnMinus.addEventListener("click", () => {
+            if (number > 0) {
+                count.innerText = --number;
+            } else {
+                alert("Number reached minimum");
+            }
+        });
+
+        let number2 = 0;
+        const count2 = document.getElementById("count2");
+        const btnPlus2 = document.getElementById("btn-plus2");
+        const btnMinus2 = document.getElementById("btn-minus2");
+
+        btnPlus2.addEventListener("click", () => {
+            if (number2 < 10) {
+                count2.innerText = ++number2;
+            } else {
+                alert("Number reached maximum");
+            }
+        });
+
+        btnMinus2.addEventListener("click", () => {
+            if (number2 > 0) {
+                count2.innerText = --number2;
+            } else {
+                alert("Number reached minimum");
+            }
+        });
+
+        let number3 = 0;
+        const count3 = document.getElementById("count3");
+        const btnPlus3 = document.getElementById("btn-plus3");
+        const btnMinus3 = document.getElementById("btn-minus3");
+
+        btnPlus3.addEventListener("click", () => {
+            if (number3 < 10) {
+                count3.innerText = ++number3;
+            } else {
+                alert("Number reached maximum");
+            }
+        });
+
+        btnMinus3.addEventListener("click", () => {
+            if (number3 > 0) {
+                count3.innerText = --number3;
+            } else {
+                alert("Number reached minimum");
+            }
+        });
+    </script>
+</body>
+</html>
